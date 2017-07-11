@@ -3,11 +3,17 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The first step is finding possible twins, which are boxes that have values with
+a length of two. After that, we confirm if they are twins by checking their peers
+and seeing if any share a value. Once we have confirmed that they are actually
+twins, we then find the shared peers of the twins and remove the twins' values
+from the peers.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: All we need to do is add two new sets of units, one for the left diagonal boxes
+and one for the right diagonal boxes. After that, the rest of the sudoku solving
+code is the same.
 
 ### Install
 
